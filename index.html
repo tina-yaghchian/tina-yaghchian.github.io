@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -7,59 +6,136 @@
   <title>Tina Yaghchian | Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-slate-50 text-slate-900 font-sans">
   <div class="max-w-6xl mx-auto px-6 py-10">
 
-```
-<header class="mb-14">
-  <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-8">
-    <p class="text-sm font-medium uppercase tracking-[0.2em] text-slate-500 mb-3">Portfolio</p>
-    <h1 class="text-4xl md:text-5xl font-bold leading-tight">Tina Yaghchian</h1>
-    <p class="mt-3 text-lg text-slate-600 max-w-3xl">Computer Engineering student at the University of Waterloo focused on building reliable systems, rapid iteration, and product-oriented engineering.</p>
+    <!-- Header -->
+    <header class="mb-14">
+      <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-8">
+        <p class="text-sm font-medium uppercase tracking-[0.2em] text-slate-500 mb-3">Portfolio</p>
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight">Tina Yaghchian</h1>
+        <p class="mt-3 text-lg text-slate-600 max-w-3xl">
+          Computer Engineering student at the University of Waterloo focused on building reliable systems, rapid iteration, and product-oriented engineering.
+        </p>
 
-    <div class="mt-5 flex flex-wrap gap-3 text-sm">
-      <span class="bg-slate-100 px-3 py-1 rounded-full">Waterloo, ON</span>
-      <a href="mailto:tyaghchi@uwaterloo.ca" class="bg-slate-100 px-3 py-1 rounded-full hover:bg-slate-200 transition">Email</a>
-      <a href="https://github.com/tina-yaghchian" target="_blank" class="bg-slate-100 px-3 py-1 rounded-full hover:bg-slate-200 transition">GitHub</a>
-      <a href="https://www.linkedin.com/in/tina-yaghchian/" target="_blank" class="bg-slate-100 px-3 py-1 rounded-full hover:bg-slate-200 transition">LinkedIn</a>
-    </div>
+        <div class="mt-5 flex flex-wrap gap-3 text-sm">
+          <span class="bg-slate-100 px-3 py-1 rounded-full">Waterloo, ON</span>
+          <a href="mailto:tyaghchi@uwaterloo.ca" class="bg-slate-100 px-3 py-1 rounded-full hover:bg-slate-200">Email</a>
+          <a href="https://github.com/tina-yaghchian" target="_blank" class="bg-slate-100 px-3 py-1 rounded-full hover:bg-slate-200">GitHub</a>
+          <a href="https://www.linkedin.com/in/tina-yaghchian/" target="_blank" class="bg-slate-100 px-3 py-1 rounded-full hover:bg-slate-200">LinkedIn</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section class="mb-14 grid lg:grid-cols-3 gap-6">
+      <div class="lg:col-span-2 bg-white rounded-3xl shadow-sm border p-8">
+        <h2 class="text-2xl font-semibold mb-4">About Me</h2>
+        <p class="text-slate-700 leading-7">
+          I build systems that combine hardware, software, and real-world usability. My work focuses on taking ideas from concept to implementation, validating them through testing, and refining them through iteration.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-3xl shadow-sm border p-8">
+        <h2 class="text-2xl font-semibold mb-4">Highlights</h2>
+        <ul class="space-y-3 text-sm">
+          <li><strong>200+</strong> test iterations</li>
+          <li><strong>99.5%</strong> accuracy achieved</li>
+          <li><strong>35%</strong> engagement growth</li>
+          <li><strong>45%</strong> UX improvement</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="mb-14">
+      <h2 class="text-2xl font-semibold mb-6">Featured Projects</h2>
+
+      <div class="grid md:grid-cols-2 gap-6">
+
+        <!-- Medicine Dispenser -->
+        <article class="bg-white p-6 rounded-3xl shadow-sm border">
+          <h3 class="text-xl font-semibold">Automated Medicine Dispenser</h3>
+          <p class="text-sm text-slate-500 mt-1">STM32, C++, Embedded Systems</p>
+
+          <p class="mt-4 text-slate-700">
+            Engineered a reliable embedded system for automated medication delivery, prioritizing safety, precision, and real-world usability.
+          </p>
+
+          <!-- IMAGE -->
+          <img src="images/medicine.jpeg" class="rounded-xl mt-4 shadow-sm" />
+
+          <ul class="mt-4 text-sm list-disc list-inside">
+            <li>200+ test iterations</li>
+            <li>99.5% accuracy</li>
+            <li>Safety safeguards implemented</li>
+          </ul>
+
+          <div class="mt-4">
+            <a href="https://github.com/tina-yaghchian/medicine-dispenser" target="_blank" class="text-sm font-medium hover:underline">
+              View Project →
+            </a>
+          </div>
+        </article>
+
+        <!-- RC Car -->
+        <article class="bg-white p-6 rounded-3xl shadow-sm border">
+          <h3 class="text-xl font-semibold">Wi-Fi Controlled RC Car</h3>
+          <p class="text-sm text-slate-500 mt-1">ESP8266, Web Interface</p>
+
+          <p class="mt-4 text-slate-700">
+            Built a real-time embedded system integrating hardware with a browser-based control interface.
+          </p>
+
+          <ul class="mt-4 text-sm list-disc list-inside">
+            <li>Web joystick control</li>
+            <li>WebSocket communication</li>
+            <li>Hardware + UI integration</li>
+          </ul>
+
+          <div class="mt-4">
+            <a href="https://github.com/tina-yaghchian/rc-car-wifi-control" target="_blank" class="text-sm font-medium hover:underline">
+              View Project →
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Additional Work -->
+    <section class="mb-14">
+      <h2 class="text-2xl font-semibold mb-6">Additional Technical Work</h2>
+
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <div class="bg-white p-5 rounded-2xl border">
+          <h3 class="font-semibold">Ethernet Transceiver</h3>
+          <a href="https://github.com/tina-yaghchian/Ethernet-Transceiver" target="_blank" class="text-sm text-blue-500">View →</a>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border">
+          <h3 class="font-semibold">Onboarding Start</h3>
+          <a href="https://github.com/tina-yaghchian/onboarding-start" target="_blank" class="text-sm text-blue-500">View →</a>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border">
+          <h3 class="font-semibold">Zero-to-ML Workshops</h3>
+          <a href="https://github.com/tina-yaghchian/F25-Zero-to-ML-Workshops" target="_blank" class="text-sm text-blue-500">View →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-sm text-slate-400 mt-10">
+      © 2026 Tina Yaghchian
+    </footer>
+
   </div>
-</header>
-
-<section class="mb-14 grid lg:grid-cols-3 gap-6">
-  <div class="lg:col-span-2 bg-white rounded-3xl shadow-sm border border-slate-200 p-8">
-    <h2 class="text-2xl font-semibold mb-4">About Me</h2>
-    <p class="text-slate-700 leading-7">
-      I build systems that combine hardware, software, and real-world usability. My work focuses on taking ideas from concept to implementation, validating them through testing, and refining them through iteration. I’m especially interested in startup environments where I can contribute across engineering and product development.
-    </p>
-  </div>
-
-  <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-8">
-    <h2 class="text-2xl font-semibold mb-4">Highlights</h2>
-    <ul class="space-y-3 text-slate-700 text-sm leading-6">
-      <li><strong>200+</strong> test iterations on embedded systems</li>
-      <li><strong>99.5%</strong> system accuracy achieved</li>
-      <li><strong>35%</strong> engagement growth (ISAW)</li>
-      <li><strong>45%</strong> website engagement increase</li>
-    </ul>
-  </div>
-</section>
-
-<section class="mb-14">
-  <div class="flex items-end justify-between mb-5">
-    <h2 class="text-2xl font-semibold">Featured Projects</h2>
-    <p class="text-sm text-slate-500">Real systems • Measurable impact • Iteration-driven</p>
-  </div>
-
-  <div class="grid md:grid-cols-2 gap-6">
-    <article class="bg-white p-6 rounded-3xl shadow-sm border border-slate-200">
-      <h3 class="text-xl font-semibold">Automated Medicine Dispenser</h3>
-      <p class="text-sm text-slate-500 mt-1">STM32, C++, Embedded Systems, Testing</p>
-
-      <p class="mt-4 text-slate-700 leading-7">
-        Engineered a reliable embedded system for automated medication delivery, prioritizing safety, precision, and real-world usability. Designed with a testing-first approach to ensure consistent performance under continuous operation.
-      </p>
-
+</body>
+</html>
       <img src="images/medicine.jpeg" class="rounded-xl mt-4 shadow-sm" />
 
       <ul class="mt-4 space-y-2 text-sm text-slate-700 list-disc list-inside">
