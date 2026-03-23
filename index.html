@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -6,96 +7,162 @@
   <title>Tina Yaghchian | Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans">
-  <div class="max-w-5xl mx-auto p-6">
+<body class="bg-slate-50 text-slate-900 font-sans">
+  <div class="max-w-6xl mx-auto px-6 py-10">
 
-    <!-- Header -->
-    <header class="mb-10">
-      <h1 class="text-4xl font-bold">Tina Yaghchian</h1>
-      <p class="text-lg text-gray-600">Computer Engineering Student | Builder | Startup Enthusiast</p>
-      <div class="mt-3 text-sm text-gray-500 space-x-2">
-        <span>Waterloo, ON</span>
-        <span>·</span>
-        <a href="mailto:tyaghchi@uwaterloo.ca" class="hover:underline">tyaghchi@uwaterloo.ca</a>
-        <span>·</span>
-        <a href="https://github.com/tina-yaghchian" target="_blank" class="hover:underline">GitHub</a>
-        <span>·</span>
-        <a href="https://www.linkedin.com/in/tina-yaghchian/" target="_blank" class="hover:underline">LinkedIn</a>
-      </div>
-    </header>
+```
+<header class="mb-14">
+  <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-8">
+    <p class="text-sm font-medium uppercase tracking-[0.2em] text-slate-500 mb-3">Portfolio</p>
+    <h1 class="text-4xl md:text-5xl font-bold leading-tight">Tina Yaghchian</h1>
+    <p class="mt-3 text-lg text-slate-600 max-w-3xl">Computer Engineering student at the University of Waterloo focused on embedded systems, product-minded building, and fast iteration in startup-style environments.</p>
 
-    <!-- About -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-3">About Me</h2>
-      <p>
-        I am a Computer Engineering student at the University of Waterloo who enjoys building practical, user-focused systems. My experience spans embedded systems, web interfaces, data analysis, and collaborative design projects. I am especially interested in startup environments where I can take ideas from concept to implementation and improve them through iteration.
-      </p>
-    </section>
+    <div class="mt-5 flex flex-wrap gap-3 text-sm">
+      <span class="bg-slate-100 px-3 py-1 rounded-full">Waterloo, ON</span>
+      <a href="mailto:tyaghchi@uwaterloo.ca" class="bg-slate-100 px-3 py-1 rounded-full hover:bg-slate-200 transition">Email</a>
+      <a href="https://github.com/tina-yaghchian" target="_blank" class="bg-slate-100 px-3 py-1 rounded-full hover:bg-slate-200 transition">GitHub</a>
+      <a href="https://www.linkedin.com/in/tina-yaghchian/" target="_blank" class="bg-slate-100 px-3 py-1 rounded-full hover:bg-slate-200 transition">LinkedIn</a>
+    </div>
+  </div>
+</header>
 
-    <!-- Projects -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-4">Projects</h2>
+<section class="mb-14 grid lg:grid-cols-3 gap-6">
+  <div class="lg:col-span-2 bg-white rounded-3xl shadow-sm border border-slate-200 p-8">
+    <h2 class="text-2xl font-semibold mb-4">About Me</h2>
+    <p class="text-slate-700 leading-7">
+      I enjoy building practical, user-focused systems that connect hardware, software, and iteration. My experience includes embedded systems, web interfaces, testing, data analysis, and collaborative engineering work. I am especially interested in startup environments where I can take ideas from concept to implementation, test them quickly, and improve them based on results.
+    </p>
+  </div>
 
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="bg-white p-5 rounded-2xl shadow">
+  <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-8">
+    <h2 class="text-2xl font-semibold mb-4">Highlights</h2>
+    <ul class="space-y-3 text-slate-700 text-sm leading-6">
+      <li><strong>200+</strong> test iterations on embedded project validation</li>
+      <li><strong>99.5%</strong> dispensing accuracy achieved</li>
+      <li><strong>35%</strong> engagement increase through ISAW leadership work</li>
+      <li><strong>45%</strong> website engagement improvement as Media Manager</li>
+    </ul>
+  </div>
+</section>
+
+<section class="mb-14">
+  <div class="flex items-end justify-between mb-5">
+    <h2 class="text-2xl font-semibold">Featured Projects</h2>
+    <p class="text-sm text-slate-500">Embedded systems • Web interfaces • Iteration</p>
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-6">
+    <article class="bg-white p-6 rounded-3xl shadow-sm border border-slate-200">
+      <div class="flex items-start justify-between gap-4">
+        <div>
           <h3 class="text-xl font-semibold">Automated Medicine Dispenser</h3>
-          <p class="text-sm text-gray-500">STM32, C++</p>
-          <ul class="mt-3 list-disc list-inside text-sm">
-            <li>Developed microcontroller-based medication system</li>
-            <li>200+ test iterations to improve reliability</li>
-            <li>Achieved 99.5% accuracy using data-driven improvements</li>
-          </ul>
+          <p class="text-sm text-slate-500 mt-1">STM32, C++, Testing, Data Analysis</p>
         </div>
-
-        <div class="bg-white p-5 rounded-2xl shadow">
-          <h3 class="text-xl font-semibold">Wi-Fi Controlled RC Car</h3>
-          <p class="text-sm text-gray-500">ESP8266, Web Interface</p>
-          <ul class="mt-3 list-disc list-inside text-sm">
-            <li>Built real-time web-controlled RC system</li>
-            <li>Designed browser joystick interface</li>
-            <li>Integrated WebSocket communication</li>
-          </ul>
-        </div>
+        <span class="text-xs bg-slate-100 px-3 py-1 rounded-full">Embedded</span>
       </div>
-    </section>
-
-    <!-- Hackathons -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-3">Hackathons</h2>
-      <ul class="list-disc list-inside text-sm">
-        <li><strong>Industry 4.0 Hackathon</strong> – Rapid prototyping and real-world problem solving</li>
-        <li><strong>WatCTF Cybersecurity Hackathon</strong> – System analysis and security challenges</li>
+      <p class="mt-4 text-slate-700 leading-7">
+        Designed and iterated a reliable embedded system for automated medication delivery, focusing on safety, accuracy, and structured testing.
+      </p>
+      <ul class="mt-4 space-y-2 text-sm text-slate-700 list-disc list-inside">
+        <li>Executed 200+ test iterations to improve reliability</li>
+        <li>Achieved 99.5% accuracy using data-driven improvements</li>
+        <li>Built with a user-safety mindset for real-world use</li>
       </ul>
-    </section>
+      <div class="mt-5 flex gap-3">
+        <a href="https://github.com/tina-yaghchian" target="_blank" class="text-sm font-medium text-slate-900 hover:underline">View GitHub →</a>
+      </div>
+    </article>
 
-    <!-- Design Teams -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-3">Design Teams</h2>
-      <ul class="list-disc list-inside text-sm">
-        <li><strong>Electrium Mobility</strong> – Firmware development for electric mobility systems</li>
-        <li><strong>UWASIC</strong> – FPGA/Verilog design and digital system development</li>
+    <article class="bg-white p-6 rounded-3xl shadow-sm border border-slate-200">
+      <div class="flex items-start justify-between gap-4">
+        <div>
+          <h3 class="text-xl font-semibold">Wi-Fi Controlled RC Car</h3>
+          <p class="text-sm text-slate-500 mt-1">ESP8266, C++, Web Interface, WebSockets</p>
+        </div>
+        <span class="text-xs bg-slate-100 px-3 py-1 rounded-full">Hardware + Web</span>
+      </div>
+      <p class="mt-4 text-slate-700 leading-7">
+        Built a real-time web-controlled embedded system that connected browser input with hardware response for a smooth, interactive user experience.
+      </p>
+      <ul class="mt-4 space-y-2 text-sm text-slate-700 list-disc list-inside">
+        <li>Created a browser-based joystick interface</li>
+        <li>Integrated WebSocket communication for responsiveness</li>
+        <li>Combined firmware logic with user-facing design</li>
       </ul>
-    </section>
+      <div class="mt-5 flex gap-3">
+        <a href="https://github.com/tina-yaghchian" target="_blank" class="text-sm font-medium text-slate-900 hover:underline">View GitHub →</a>
+      </div>
+    </article>
+  </div>
+</section>
 
-    <!-- Leadership -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-3">Leadership & Creative Work</h2>
-      <ul class="list-disc list-inside text-sm">
-        <li><strong>Vice President – ISAW</strong> – Increased engagement by 35%</li>
-        <li><strong>Media Manager</strong> – Improved website UX and engagement by 45%</li>
-      </ul>
-    </section>
+<section class="mb-14 grid md:grid-cols-2 gap-6">
+  <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-8">
+    <h2 class="text-2xl font-semibold mb-4">Hackathons</h2>
+    <div class="space-y-4 text-slate-700">
+      <div>
+        <h3 class="font-semibold">Industry 4.0 Hackathon</h3>
+        <p class="text-sm mt-1">Worked in a fast-paced team environment focused on rapid prototyping and practical problem solving.</p>
+      </div>
+      <div>
+        <h3 class="font-semibold">WatCTF Cybersecurity Hackathon</h3>
+        <p class="text-sm mt-1">Strengthened analytical thinking through security-focused challenges, debugging, and system analysis.</p>
+      </div>
+    </div>
+  </div>
 
-    <!-- Workshops -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-3">Workshops</h2>
-      <p class="text-sm">Zero-to-ML Workshops – Machine learning fundamentals, data analysis, and model building.</p>
-    </section>
+  <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-8">
+    <h2 class="text-2xl font-semibold mb-4">Design Teams</h2>
+    <div class="space-y-4 text-slate-700">
+      <div>
+        <h3 class="font-semibold">Electrium Mobility</h3>
+        <p class="text-sm mt-1">Contributed to firmware development for electric mobility systems and worked on hardware-software integration.</p>
+      </div>
+      <div>
+        <h3 class="font-semibold">UWASIC</h3>
+        <p class="text-sm mt-1">Worked on FPGA and Verilog-based digital design, strengthening my understanding of hardware systems and chip-level logic.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="text-center text-sm text-gray-400 mt-10">
-      © 2026 Tina Yaghchian
-    </footer>
+<section class="mb-14 grid md:grid-cols-2 gap-6">
+  <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-8">
+    <h2 class="text-2xl font-semibold mb-4">Leadership & Creative Work</h2>
+    <div class="space-y-4 text-slate-700">
+      <div>
+        <h3 class="font-semibold">Vice President – ISAW</h3>
+        <p class="text-sm mt-1">Led event coordination and social media efforts, helping increase engagement by 35%.</p>
+      </div>
+      <div>
+        <h3 class="font-semibold">Media Manager</h3>
+        <p class="text-sm mt-1">Improved website user experience and increased engagement by 45% through design-focused updates.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-8">
+    <h2 class="text-2xl font-semibold mb-4">Workshops & Learning</h2>
+    <div class="space-y-4 text-slate-700 text-sm leading-6">
+      <div>
+        <h3 class="font-semibold text-base text-slate-900">Zero-to-ML Workshops</h3>
+        <p class="mt-1">Explored machine learning fundamentals, data analysis, preprocessing, and basic model building using Python-based tools.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mb-14 bg-white rounded-3xl shadow-sm border border-slate-200 p-8">
+  <h2 class="text-2xl font-semibold mb-4">What I’m Looking For</h2>
+  <p class="text-slate-700 leading-7 max-w-4xl">
+    I am looking for opportunities where I can contribute as a builder, learn quickly, and work across technical and product-focused areas. I’m especially excited by teams that value iteration, ownership, and practical problem solving.
+  </p>
+</section>
+
+<footer class="text-center text-sm text-slate-400 mt-10">
+  © 2026 Tina Yaghchian
+</footer>
+```
 
   </div>
 </body>
