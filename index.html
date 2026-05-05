@@ -1,40 +1,102 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tina Yaghchian | Portfolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
+<header class="mb-14">
+  <div class="bg-gradient-to-r from-indigo-500 to-purple-500 text-white rounded-3xl shadow-lg p-8">
+    <p class="text-sm font-medium uppercase tracking-[0.2em] text-white/70 mb-3">Portfolio</p>
+    <h1 class="text-4xl md:text-5xl font-bold leading-tight">Tina Yaghchian</h1>
+    <p class="mt-3 text-lg text-white/80 max-w-3xl">
+      Computer Engineering student at the University of Waterloo focused on building reliable systems, rapid iteration, and product-oriented engineering.
+    </p>
 
-<body class="bg-slate-50 text-slate-900 font-sans">
-  <div class="max-w-6xl mx-auto px-6 py-10">
+    <div class="mt-5 flex flex-wrap gap-3 text-sm">
+      <span class="bg-white/20 px-3 py-1 rounded-full">Waterloo, ON</span>
+      <a href="mailto:tyaghchi@uwaterloo.ca" class="bg-white/20 px-3 py-1 rounded-full hover:bg-white/30 transition">Email</a>
+      <a href="https://github.com/tina-yaghchian" target="_blank" class="bg-white/20 px-3 py-1 rounded-full hover:bg-white/30 transition">GitHub</a>
+      <a href="https://www.linkedin.com/in/tina-yaghchian/" target="_blank" class="bg-white/20 px-3 py-1 rounded-full hover:bg-white/30 transition">LinkedIn</a>
+      <a href="https://www.instagram.com/isaw.ca/" target="_blank" class="bg-white/20 px-3 py-1 rounded-full hover:bg-white/30 transition">ISAW Instagram</a>
+    </div>
+  </div>
+</header>
 
-    <header class="mb-14">
-      <div class="bg-gradient-to-r from-indigo-500 to-purple-500 text-white rounded-3xl shadow-lg p-8">
-        <p class="text-sm font-medium uppercase tracking-[0.2em] text-white/70 mb-3">Portfolio</p>
-        <h1 class="text-4xl md:text-5xl font-bold leading-tight">Tina Yaghchian</h1>
-        <p class="mt-3 text-lg text-white/80 max-w-3xl">Computer Engineering student at the University of Waterloo focused on building reliable systems, rapid iteration, and product-oriented engineering.</p>
+<section class="mb-14 grid lg:grid-cols-3 gap-6">
+  <div class="lg:col-span-2 bg-white rounded-3xl shadow-md border p-8 hover:shadow-xl hover:-translate-y-1 transition">
+    <h2 class="text-2xl font-semibold mb-4 text-indigo-600">About Me</h2>
+    <p class="text-slate-700 leading-7">
+      I build systems that combine hardware, software, and real-world usability...
+    </p>
+  </div>
 
-        <div class="mt-5 flex flex-wrap gap-3 text-sm">
-          <span class="bg-white/20 px-3 py-1 rounded-full">Waterloo, ON</span>
-          <a href="mailto:tyaghchi@uwaterloo.ca" class="bg-white/20 px-3 py-1 rounded-full hover:bg-white/30 transition">Email</a>
-          <a href="https://github.com/tina-yaghchian" target="_blank" class="bg-white/20 px-3 py-1 rounded-full hover:bg-white/30 transition">GitHub</a>
-          <a href="https://www.linkedin.com/in/tina-yaghchian/" target="_blank" class="bg-white/20 px-3 py-1 rounded-full hover:bg-white/30 transition">LinkedIn</a>
-          <a href="https://www.instagram.com/isaw.ca/" target="_blank" class="bg-white/20 px-3 py-1 rounded-full hover:bg-white/30 transition">ISAW Instagram</a>
-        </div>
+  <div class="bg-white rounded-3xl shadow-md border p-8 hover:shadow-xl hover:-translate-y-1 transition">
+    <h2 class="text-2xl font-semibold mb-4 text-purple-600">Highlights</h2>
+    <ul class="space-y-3 text-slate-700 text-sm leading-6">
+      <li><span class="text-indigo-600 font-bold">200+</span> test iterations</li>
+      <li><span class="text-green-600 font-bold">99.5%</span> accuracy</li>
+      <li><span class="text-purple-600 font-bold">35%</span> engagement growth</li>
+      <li><span class="text-cyan-600 font-bold">45%</span> website growth</li>
+    </ul>
+  </div>
+</section>
+
+<section class="mb-14">
+  <div class="flex items-end justify-between mb-5">
+    <h2 class="text-2xl font-semibold text-indigo-600">Featured Projects</h2>
+    <p class="text-sm text-slate-500">Real systems • Measurable impact • Iteration-driven</p>
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-6">
+
+    <article class="bg-white p-6 rounded-3xl shadow-md border hover:shadow-xl hover:-translate-y-1 transition">
+      <h3 class="text-xl font-semibold">Automated Medicine Dispenser</h3>
+
+      <div class="flex flex-wrap gap-2 mt-2 text-xs">
+        <span class="bg-indigo-100 text-indigo-700 px-2 py-1 rounded">STM32</span>
+        <span class="bg-green-100 text-green-700 px-2 py-1 rounded">C++</span>
+        <span class="bg-purple-100 text-purple-700 px-2 py-1 rounded">Testing</span>
       </div>
-    </header>
 
-    <section class="mb-14 grid lg:grid-cols-3 gap-6">
-      <div class="lg:col-span-2 bg-white rounded-3xl shadow-md border p-8 hover:shadow-xl hover:-translate-y-1 transition">
-        <h2 class="text-2xl font-semibold mb-4">About Me</h2>
-        <p class="text-slate-700 leading-7">
-          I build systems that combine hardware, software, and real-world usability. My work focuses on taking ideas from concept to implementation, validating them through testing, and refining them through iteration.
-        </p>
+      <p class="mt-4 text-slate-700 leading-7">
+        Engineered a reliable embedded system for automated medication delivery...
+      </p>
+      
+      <img src="images/medicine.jpeg" class="rounded-xl mt-4 shadow-md hover:scale-[1.02] transition" />
+
+      <ul class="mt-4 space-y-2 text-sm text-slate-700 list-disc list-inside">
+        <li>Executed 200+ structured test cycles</li>
+        <li>Achieved 99.5% accuracy</li>
+        <li>Implemented safeguards</li>
+      </ul>
+
+      <div class="mt-5">
+        <a href="#" class="text-indigo-600 font-medium hover:underline">View Project →</a>
+      </div>
+    </article>
+
+    <article class="bg-white p-6 rounded-3xl shadow-md border hover:shadow-xl hover:-translate-y-1 transition">
+      <h3 class="text-xl font-semibold">Wi-Fi Controlled RC Car</h3>
+
+      <div class="flex flex-wrap gap-2 mt-2 text-xs">
+        <span class="bg-cyan-100 text-cyan-700 px-2 py-1 rounded">ESP8266</span>
+        <span class="bg-green-100 text-green-700 px-2 py-1 rounded">C++</span>
+        <span class="bg-indigo-100 text-indigo-700 px-2 py-1 rounded">WebSockets</span>
       </div>
 
-      <div class="bg-white rounded-3xl shadow-md border p-8 hover:shadow-xl hover:-translate-y-1 transition">
+      <p class="mt-4 text-slate-700 leading-7">
+        Designed and implemented a real-time embedded control system...
+      </p>
+
+      <img src="images/RC_Car.jpeg" class="rounded-xl mt-4 shadow-md hover:scale-[1.02] transition" />
+
+      <ul class="mt-4 space-y-2 text-sm text-slate-700 list-disc list-inside">
+        <li>Live web joystick control</li>
+        <li>Real-time communication</li>
+        <li>Firmware + UI integration</li>
+      </ul>
+
+      <div class="mt-5">
+        <a href="#" class="text-indigo-600 font-medium hover:underline">View Project →</a>
+      </div>
+    </article>
+
+  </div>
+</section>      <div class="bg-white rounded-3xl shadow-md border p-8 hover:shadow-xl hover:-translate-y-1 transition">
         <h2 class="text-2xl font-semibold mb-4">Highlights</h2>
         <ul class="space-y-3 text-slate-700 text-sm">
           <li><span class="text-indigo-600 font-bold">200+</span> test iterations</li>
