@@ -1,5 +1,7 @@
 # Tina Yaghchian Portfolio
 
+![Portfolio Preview](images/portfolio-preview.png)
+
 Personal portfolio website showcasing my software, embedded systems, and engineering projects as a Computer Engineering student at the University of Waterloo.
 
 ## Live Website
