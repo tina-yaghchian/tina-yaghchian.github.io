@@ -61,10 +61,10 @@ Supported planning and promotion for cultural and professional events while incr
 
 ## Organizations & Activities
 
-- UWASIC Design Team
 - Electrium Mobility Design Team
 - WatCTF Cybersecurity Hackathon
 - Industry 4.0 Hackathon
+- UWASIC Design Team
 - Machine Learning Workshops
 
 ---
