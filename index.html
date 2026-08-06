@@ -1,296 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tina Yaghchian | Portfolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tina Yaghchian | Computer Engineering</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
 
-<body class="bg-slate-950 text-slate-100 font-sans">
-  <div class="max-w-6xl mx-auto px-6 py-10">
+<body>
 
-    <!-- HEADER -->
-    <header class="mb-14">
-      <div class="bg-gradient-to-br from-indigo-900 via-slate-900 to-slate-950 rounded-3xl shadow-xl border border-indigo-700/40 p-8">
-        <p class="text-sm font-medium uppercase tracking-[0.25em] text-indigo-300 mb-3">Portfolio</p>
+    <!-- Navigation -->
 
-        <h1 class="text-4xl md:text-6xl font-bold leading-tight">
-          Tina Yaghchian
-        </h1>
+    <nav>
 
-        <p class="mt-4 text-lg text-slate-300 max-w-3xl leading-8">
-          Computer Engineering student at the University of Waterloo focused on embedded systems,
-          software development, testing, and building reliable real-world engineering solutions.
-        </p>
+        <button class="menu-btn">
 
-        <div class="mt-6 flex flex-wrap gap-3 text-sm">
-          <span class="bg-indigo-500/20 text-indigo-200 px-4 py-2 rounded-full border border-indigo-400/30">Waterloo, ON</span>
-          <a href="mailto:tyaghchi@uwaterloo.ca" class="bg-slate-800 px-4 py-2 rounded-full hover:bg-indigo-700 transition">Email</a>
-          <a href="https://github.com/tina-yaghchian" target="_blank" class="bg-slate-800 px-4 py-2 rounded-full hover:bg-indigo-700 transition">GitHub</a>
-          <a href="https://www.linkedin.com/in/tina-yaghchian/" target="_blank" class="bg-slate-800 px-4 py-2 rounded-full hover:bg-indigo-700 transition">LinkedIn</a>
-        </div>
-      </div>
-    </header>
+            ☰
 
-    <!-- ABOUT + HIGHLIGHTS -->
-    <section class="mb-14 grid lg:grid-cols-3 gap-6">
-      <div class="lg:col-span-2 bg-slate-900 rounded-3xl shadow-lg border border-slate-800 p-8">
-        <h2 class="text-2xl font-semibold mb-4 text-indigo-300">About Me</h2>
+        </button>
 
-        <p class="text-slate-300 leading-7">
-          I am a Computer Engineering student at the University of Waterloo with hands-on experience
-          building embedded and software systems from concept to implementation. I specialize in
-          C++, Python, microcontroller development, hardware testing, and data-driven debugging.
-          My work includes STM32 systems, ESP8266 wireless control, automated testing, CAD-based
-          prototyping, and student leadership through technical and community-focused roles.
-        </p>
-      </div>
+        <h2 class="logo">
+            TY
+        </h2>
 
-      <div class="bg-slate-900 rounded-3xl shadow-lg border border-slate-800 p-8">
-        <h2 class="text-2xl font-semibold mb-4 text-indigo-300">Highlights</h2>
+    </nav>
+    
+    <!-- Sidebar -->
 
-        <ul class="space-y-3 text-slate-300 text-sm leading-6">
-          <li><strong class="text-white">99.5%</strong> dispensing accuracy</li>
-          <li><strong class="text-white">200+</strong> structured test cycles</li>
-          <li><strong class="text-white">85%</strong> reduction in dispensing errors</li>
-          <li><strong class="text-white">35%</strong> student engagement growth</li>
-          <li><strong class="text-white">45%</strong> website engagement increase</li>
-        </ul>
-      </div>
-    </section>
+<div class="sidebar" id="sidebar">
 
-    <!-- SKILLS -->
-    <section class="mb-14">
-      <div class="bg-slate-900 rounded-3xl shadow-lg border border-slate-800 p-8">
-        <h2 class="text-2xl font-semibold mb-6 text-indigo-300">Technical Skills</h2>
+    <button class="close-btn" id="closeBtn">
 
-        <div class="grid md:grid-cols-2 gap-6 text-sm text-slate-300 leading-7">
-          <div class="space-y-2">
-            <p><strong class="text-white">Languages:</strong> Python, C++, HTML/CSS</p>
-            <p><strong class="text-white">Embedded Systems:</strong> STM32, Arduino, ESP8266</p>
-            <p><strong class="text-white">Development Tools:</strong> Git/GitHub, VS Code, Linux Command Line, Arduino IDE</p>
-          </div>
+        ✕
 
-          <div class="space-y-2">
-            <p><strong class="text-white">Data & Analytics:</strong> NumPy, Pandas, SQL, Data Visualization</p>
-            <p><strong class="text-white">Testing:</strong> Unit Testing, Hardware-in-Loop Testing, Test Case Design, Debugging</p>
-            <p><strong class="text-white">Hardware & Design:</strong> AutoCAD, SolidWorks, 3D Printing</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    </button>
 
-    <!-- FEATURED PROJECTS -->
-    <section class="mb-14">
-      <div class="flex items-end justify-between mb-5">
-        <h2 class="text-2xl font-semibold text-indigo-300">Featured Projects</h2>
-        <p class="text-sm text-slate-400">Embedded Systems • Software • Testing</p>
-      </div>
+    <ul>
 
-      <div class="grid md:grid-cols-2 gap-6">
+        <li><a href="index.html">Home</a></li>
 
-        <!-- Medicine Dispenser -->
-        <article class="bg-slate-900 p-6 rounded-3xl shadow-lg border border-slate-800 hover:border-indigo-500 transition">
-          <h3 class="text-xl font-semibold text-white">Automated Medicine Dispenser</h3>
-          <p class="text-sm text-indigo-300 mt-1">STM32, C++, Embedded Systems, Testing Reliability</p>
+        <li><a href="about.html">About</a></li>
 
-          <p class="mt-4 text-slate-300 leading-7">
-            Developed an STM32-based automated medication dispenser for elderly care, focusing on
-            reliability, precision, safety, and continuous operation.
-          </p>
+        <li><a href="projects.html">Projects</a></li>
 
-          <img src="images/medicine.jpeg" alt="Automated Medicine Dispenser" class="rounded-xl mt-4 shadow-md border border-slate-700" />
+        <li><a href="experience.html">Experience</a></li>
 
-          <ul class="mt-4 space-y-2 text-sm text-slate-300 list-disc list-inside">
-            <li>Achieved <strong class="text-white">99.5% dispensing accuracy</strong> across 200+ test cycles</li>
-            <li>Reduced dispensing errors by <strong class="text-white">85%</strong> using optimized servo control algorithms</li>
-            <li>Maintained <strong class="text-white">±0.1g precision</strong> for medication dosing</li>
-            <li>Integrated safety sensors and error-handling protocols to prevent double-dose incidents</li>
-            <li>Analyzed 200+ test-cycle datasets using Python to identify failure patterns</li>
-          </ul>
+        <li><a href="contact.html">Contact</a></li>
 
-          <div class="mt-5">
-            <a href="https://github.com/tina-yaghchian/medicine-dispenser" target="_blank" class="text-sm font-medium text-indigo-300 hover:text-indigo-200 hover:underline">View Project →</a>
-          </div>
-        </article>
+    </ul>
 
-        <!-- RC Car -->
-        <article class="bg-slate-900 p-6 rounded-3xl shadow-lg border border-slate-800 hover:border-indigo-500 transition">
-          <h3 class="text-xl font-semibold text-white">Wi-Fi Controlled RC Car</h3>
-          <p class="text-sm text-indigo-300 mt-1">ESP8266, C++, Arduino, Web Interface, WebSockets</p>
+    <div class="socials">
 
-          <p class="mt-4 text-slate-300 leading-7">
-            Built a real-time wireless RC car control system using an ESP8266-hosted local Wi-Fi
-            network and browser-based joystick interface.
-          </p>
+        <a href="https://github.com/tina-yaghchian" target="_blank">
+            GitHub
+        </a>
 
-          <img src="images/RC_Car.jpeg" alt="Wi-Fi Controlled RC Car" class="rounded-xl mt-4 shadow-md border border-slate-700" />
+        <a href="https://linkedin.com/in/tina-yaghchian" target="_blank">
+            LinkedIn
+        </a>
 
-          <ul class="mt-4 space-y-2 text-sm text-slate-300 list-disc list-inside">
-            <li>Programmed ESP8266 to host a local Wi-Fi network for live joystick control</li>
-            <li>Integrated real-time WebSocket communication for low-latency speed and steering response</li>
-            <li>Designed modular C++ firmware for PWM motor control, servo mapping, and input parsing</li>
-            <li>Connected embedded firmware with a responsive browser-based user interface</li>
-          </ul>
+    </div>
 
-          <div class="mt-5">
-            <a href="https://github.com/tina-yaghchian/rc-car-wifi-control" target="_blank" class="text-sm font-medium text-indigo-300 hover:text-indigo-200 hover:underline">View Project →</a>
-          </div>
-        </article>
-
-        <!-- Rocket -->
-        <article class="bg-slate-900 p-6 rounded-3xl shadow-lg border border-slate-800 hover:border-indigo-500 transition">
-          <h3 class="text-xl font-semibold text-white">Competition Rocket Design & Launch System</h3>
-          <p class="text-sm text-indigo-300 mt-1">Arduino, C++, CAD, Control Systems</p>
-
-          <p class="mt-4 text-slate-300 leading-7">
-            Designed and implemented an automated rocket launch system focused on safety,
-            precision, and repeatable launch performance.
-          </p>
-
-          <ul class="mt-4 space-y-2 text-sm text-slate-300 list-disc list-inside">
-            <li>Won <strong class="text-white">“Most Accurate Launch”</strong> award</li>
-            <li>Achieved <strong class="text-white">2.5m target accuracy</strong> through trajectory modeling</li>
-            <li>Programmed automated launch sequence with safety interlocks</li>
-            <li>Reduced human error by <strong class="text-white">90%</strong></li>
-            <li>Achieved <strong class="text-white">100% successful ignition rate</strong> across 12 test launches</li>
-          </ul>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section class="mb-14">
-      <div class="bg-slate-900 rounded-3xl shadow-lg border border-slate-800 p-8">
-        <h2 class="text-2xl font-semibold mb-6 text-indigo-300">Experience</h2>
-
-        <div class="space-y-6">
-
-          <div class="border-l-4 border-indigo-500 pl-5">
-            <h3 class="text-lg font-semibold text-white">Software Engineer Intern — Jumbula</h3>
-            <p class="text-sm text-slate-400">May 2026 - Present· Remote</p>
-            <p class="mt-2 text-sm text-slate-300 leading-6">
-              Supported software engineering and platform integration projects involving Salesforce, Tableau,
-              CRM data workflows, API-based system connections, and internal technical development.
-            </p>
-        </div>
-
-<div class="border-l-4 border-indigo-500 pl-5">
-  <h3 class="text-lg font-semibold text-white">Discord Director & UI/UX Subteam — Women in Engineering Society | University of Waterloo </h3>
-  <p class="text-sm text-slate-400">May 2026 - Present · Waterloo, ON</p>
-  <p class="mt-2 text-sm text-slate-300 leading-6">
-    Managed the WiE Discord community and contributed to UI/UX initiatives focused on improving
-    student engagement, accessibility, communication, and digital community experience.
-  </p>
 </div>
 
-          <div class="border-l-4 border-indigo-500 pl-5">
-            <h3 class="text-lg font-semibold text-white">Media Manager — Nikvan Consulting Inc.</h3>
-            <p class="text-sm text-slate-400">Jan 2024 – Present · Toronto, ON</p>
-            <p class="mt-2 text-sm text-slate-300 leading-6">
-              Rebuilt and maintained a client website using HTML/CSS and WordPress, improving
-              engagement by <strong class="text-white">45%</strong>. Integrated automated booking workflows that reduced
-              scheduling conflicts by <strong class="text-white">80%</strong>.
-            </p>
-          </div>
+        <!-- Hero -->
 
-          <div class="border-l-4 border-indigo-500 pl-5">
-            <h3 class="text-lg font-semibold text-white">Vice President — Iranian Students’ Association of Waterloo | University of Waterloo</h3>
-            <p class="text-sm text-slate-400">Apr 2025 – Sep 2025 · Waterloo, ON</p>
-            <p class="mt-2 text-sm text-slate-300 leading-6">
-              Supported planning and promotion for 12+ cultural and professional events by using
-              online platforms, event tools, and content strategy. Increased engagement by
-              <strong class="text-white">35%</strong> and supported student networking and co-op opportunities.
-            </p>
-          </div>
+    <section class="hero">
 
-          <div class="border-l-4 border-indigo-500 pl-5">
-            <h3 class="text-lg font-semibold text-white">Class Representative — University of Waterloo</h3>
-            <p class="text-sm text-slate-400">May 2025 – Aug 2025 · Waterloo, ON</p>
-            <p class="mt-2 text-sm text-slate-300 leading-6">
-              Implemented structured feedback systems between 60+ students and faculty, contributing
-              to curriculum improvements and stronger communication between students and instructors.
-            </p>
-          </div>
+        <h1>
+            Tina Yaghchian
+        </h1>
 
+        <h2>
+            Computer Engineering Student
+        </h2>
+
+        <p>
+            University of Waterloo
+        </p>
+
+        <p class="description">
+            Building embedded systems, firmware, and software
+            that solve real-world engineering problems.
+        </p>
+
+        <a href="projects.html" class="primary">
+            View My Work
+        </a>
+
+        <div class="scroll">
+            ↓
+            <span>Explore</span>
         </div>
-      </div>
+
     </section>
-    
-    <!-- ISAW CONTENT CREATION -->
-    <section class="mb-14">
-      <div class="bg-slate-900 rounded-3xl shadow-lg border border-slate-800 p-8">
-        <h2 class="text-2xl font-semibold mb-6 text-indigo-300">ISAW Content Creation</h2>
 
-        <div class="border-l-4 border-indigo-500 pl-5">
-          <h3 class="text-lg font-semibold text-white">Content Creation — Iranian Students’ Association of Waterloo</h3>
-          <p class="text-sm text-slate-400">Student Club Media & Event Promotion</p>
+        <div class="buttons">
 
-          <p class="mt-2 text-sm text-slate-300 leading-6">
-            Created digital content for the Iranian Students’ Association of Waterloo to promote
-            club initiatives, community engagement, and campus events. Supported content planning,
-            social media promotion, and visual communication for many cultural, social, and
-            professional events hosted by the club.
-          </p>
+            <a href="projects.html" class="primary">
 
-          <div class="mt-5">
-            <a href="https://www.instagram.com/isaw.ca/" target="_blank" class="text-sm font-medium text-indigo-300 hover:text-indigo-200 hover:underline">
-              View ISAW Instagram →
+                View My Work
+
             </a>
-          </div>
+
+            <a href="assets/resume.pdf" class="secondary">
+
+                Resume
+
+            </a>
+
         </div>
-      </div>
-    </section>
-    
-    <!-- ACTIVITIES -->
-    <section class="mb-14 grid md:grid-cols-3 gap-6">
-      <div class="bg-slate-900 rounded-3xl shadow-lg border border-slate-800 p-6">
-        <h3 class="text-lg font-semibold text-white">UWASIC Design Team</h3>
-        <p class="text-sm text-slate-400 mt-1">Verilog, FPGA, Digital Systems</p>
-        <p class="mt-3 text-sm text-slate-300 leading-6">
-         Completed onboarding and training projects focused on Verilog-based digital design, simulation, and verification workflows.
-        </p>
-      </div>
 
-      <div class="bg-slate-900 rounded-3xl shadow-lg border border-slate-800 p-6">
-        <h3 class="text-lg font-semibold text-white">Electrium Mobility Design Team</h3>
-        <p class="text-sm text-slate-400 mt-1">Firmware, Embedded Systems</p>
-        <p class="mt-3 text-sm text-slate-300 leading-6">
-          Exploring embedded systems and mobility-focused engineering through student design team work.
-        </p>
-      </div>
+        <div class="scroll">
 
-      <div class="bg-slate-900 rounded-3xl shadow-lg border border-slate-800 p-6">
-        <h3 class="text-lg font-semibold text-white">Hackathons & Workshops</h3>
-        <p class="text-sm text-slate-400 mt-1">Cybersecurity, ML, Industry 4.0</p>
-        <p class="mt-3 text-sm text-slate-300 leading-6">
-          Participated in WatCTF Cybersecurity Hackathon, Industry 4.0 Hackathon, and ML workshops.
-        </p>
-      </div>
+            ↓
+
+            <span>
+
+                Explore
+
+            </span>
+
+        </div>
+
     </section>
 
-    <!-- EDUCATION -->
-    <section class="mb-14">
-      <div class="bg-slate-900 rounded-3xl shadow-lg border border-slate-800 p-8">
-        <h2 class="text-2xl font-semibold mb-4 text-indigo-300">Education</h2>
+<script src="js/script.js"></script>
 
-        <h3 class="text-lg font-semibold text-white">University of Waterloo</h3>
-        <p class="text-sm text-slate-400">Bachelor of Computer Engineering · Expected May 2030</p>
-
-        <p class="mt-3 text-sm text-slate-300 leading-6">
-          Relevant interests include embedded systems, automation, data analysis, software development,
-          digital design, and systems engineering.
-        </p>
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="text-center text-sm text-slate-500 mt-10">
-      © 2026 Tina Yaghchian
-    </footer>
-
-  </div>
 </body>
+
 </html>
