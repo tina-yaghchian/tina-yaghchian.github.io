@@ -17,22 +17,30 @@
 </head>
 
 <body>
+<div class="background-effects">
 
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+
+    <div class="circuit circuit-top-left"></div>
+    <div class="circuit circuit-top-right"></div>
+    <div class="circuit circuit-bottom-left"></div>
+    <div class="circuit circuit-bottom-right"></div>
+
+</div>
     <!-- Navigation -->
 
-    <nav>
+ <nav>
 
-        <button class="menu-btn">
+    <button class="menu-btn" id="menuBtn" aria-label="Open Menu">
+        ☰
+    </button>
 
-            ☰
+    <h2 class="logo">
+        TY
+    </h2>
 
-        </button>
-
-        <h2 class="logo">
-            TY
-        </h2>
-
-    </nav>
+</nav>
     
     <!-- Sidebar -->
 
@@ -46,7 +54,7 @@
 
     <ul>
 
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
 
         <li><a href="about.html">About</a></li>
 
@@ -72,67 +80,50 @@
 
 </div>
 
-        <!-- Hero -->
+    <!-- Hero -->
 
-    <section class="hero">
+<section class="hero">
 
-        <h1>
-            Tina Yaghchian
-        </h1>
+    <h1>
+        Tina Yaghchian
+    </h1>
 
-        <h2>
-            Computer Engineering Student
-        </h2>
+    <h2>
+        Computer Engineering Student
+    </h2>
 
-        <p>
-            University of Waterloo
-        </p>
+    <p class="school">
+        @ University of Waterloo
+    </p>
 
-        <p class="description">
-            Building embedded systems, firmware, and software
-            that solve real-world engineering problems.
-        </p>
+    <p class="description">
+        Building embedded systems, firmware, and software
+        that solve real-world engineering problems.
+    </p>
 
-        <a href="projects.html" class="primary">
-            View My Work
+    <div class="hero-buttons">
+
+        <a href="about.html" class="primary">
+            About Me!
         </a>
 
-        <div class="scroll">
-            ↓
-            <span>Explore</span>
-        </div>
+        <a href="projects.html" class="primary">
+            Projects
+        </a>
 
-    </section>
+        <a href="experience.html" class="primary">
+            Experience
+        </a>
 
-        <div class="buttons">
+        <a href="contact.html" class="primary">
+            Contact
+        </a>
 
-            <a href="projects.html" class="primary">
+    </div>
 
-                View My Work
+</section>
 
-            </a>
-
-            <a href="assets/resume.pdf" class="secondary">
-
-                Resume
-
-            </a>
-
-        </div>
-
-        <div class="scroll">
-
-            ↓
-
-            <span>
-
-                Explore
-
-            </span>
-
-        </div>
-
-    </section>
+</div>
 
 <script src="js/script.js"></script>
 
