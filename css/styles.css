@@ -13,21 +13,67 @@ html {
 }
 
 /* ==========================================
-   GLOBAL STYLES
+   THEME VARIABLES
 ========================================== */
 
-body {
-    font-family: "Inter", sans-serif;
-    color: white;
-    min-height: 100vh;
-    overflow-x: hidden;
+:root {
 
-    background: linear-gradient(
+    /* Light Theme */
+
+    --bg: #F8FAFC;
+    --text: #1E293B;
+    --text-secondary: #475569;
+
+    --card: rgba(255,255,255,.92);
+    --card-border: rgba(15,23,42,.08);
+
+    --accent: #6366F1;
+    --accent-hover: #4F46E5;
+
+    --nav-text: #1E293B;
+
+    --background:
+        linear-gradient(
+            180deg,
+            #EEF2FF 0%,
+            #F8FAFC 45%,
+            #FFFFFF 100%
+        );
+}
+
+[data-theme="dark"] {
+
+    --bg: #020617;
+    --text: white;
+    --text-secondary: #CBD5E1;
+
+    --card: rgba(255,255,255,.05);
+    --card-border: rgba(255,255,255,.08);
+
+    --accent: #6366F1;
+    --accent-hover: #4F46E5;
+
+    --nav-text: white;
+
+    --background: linear-gradient(
         180deg,
         #1e1b4b 0%,
         #0f172a 45%,
         #020617 100%
     );
+}
+
+/* ==========================================
+   GLOBAL STYLES
+========================================== */
+
+body {
+    font-family: "Inter", sans-serif;
+    color: var(--text);
+    min-height: 100vh;
+    overflow-x: hidden;
+
+    background: var(--background);
 }
 
 /* ==========================================
