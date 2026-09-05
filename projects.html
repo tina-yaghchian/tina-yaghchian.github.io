@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,189 +18,336 @@
 </head>
 
 <body>
-<div class="background-effects">
 
-    <div class="glow glow-1"></div>
-    <div class="glow glow-2"></div>
+    <div class="background-effects">
 
-    <div class="circuit circuit-top-left"></div>
-    <div class="circuit circuit-top-right"></div>
-    <div class="circuit circuit-bottom-left"></div>
-    <div class="circuit circuit-bottom-right"></div>
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
 
-</div>
+        <div class="circuit circuit-top-left"></div>
+        <div class="circuit circuit-top-right"></div>
+        <div class="circuit circuit-bottom-left"></div>
+        <div class="circuit circuit-bottom-right"></div>
+
+    </div>
+
+
     <!-- Navigation -->
 
-<nav>
+    <nav>
 
-    <button class="menu-btn" id="menuBtn">
-        ☰
-    </button>
+        <button class="menu-btn" id="menuBtn">
+            ☰
+        </button>
 
-    <div class="right-nav">
-        <div class="logo">TY</div>
+        <div class="right-nav">
+            <div class="logo">TY</div>
+        </div>
 
-    </div>
+    </nav>
 
-</nav>
-    
+
     <!-- Sidebar -->
 
-<div class="sidebar" id="sidebar">
+    <div class="sidebar" id="sidebar">
 
-    <button class="close-btn" id="closeBtn">
+        <button class="close-btn" id="closeBtn">
+            ✕
+        </button>
 
-        ✕
+        <ul>
 
-    </button>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
 
-    <ul>
+            <li>
+                <a href="about.html">About</a>
+            </li>
 
-        <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="projects.html" class="active">Projects</a>
+            </li>
 
-        <li><a href="about.html">About</a></li>
+            <li>
+                <a href="experience.html">Experience</a>
+            </li>
 
-        <li><a href="projects.html" class="active">Projects</a></li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
 
-        <li><a href="experience.html">Experience</a></li>
+        </ul>
 
-        <li><a href="contact.html">Contact</a></li>
+        <div class="socials">
 
-    </ul>
+            <a href="https://github.com/tina-yaghchian"
+               target="_blank"
+               rel="noopener noreferrer">
+                GitHub
+            </a>
 
-    <div class="socials">
-
-        <a href="https://github.com/tina-yaghchian" target="_blank">
-            GitHub
-        </a>
-
-        <a href="https://linkedin.com/in/tina-yaghchian" target="_blank">
-            LinkedIn
-        </a>
-
-    </div>
-
-</div>
-
-<main class="projects">
-
-    <!-- Hero -->
-    <div class="projects-header">
-
-        <p class="greeting fade-up delay-1">
-            PROJECTS
-        </p>
-
-        <h1 class="fade-up delay-2">
-            Featured Work
-        </h1>
-
-        <p class="projects-description fade-up delay-3">
-            A collection of engineering and software projects focused on embedded
-            systems, AI, firmware, software engineering, and data visualization.
-        </p>
-
-    </div>
-
-    <a href="#projects-list" class="scroll-indicator">
-        <span>↓</span>
-        <p>Explore</p>
-    </a>
-
-    <!-- Projects -->
-    <div id="projects-list">
-
-        <!-- Project 1 -->
-        <div class="project">
-
-            <img src="images/medicine.jpeg"
-                 alt="Medicine Dispenser">
-
-            <div class="project-info">
-
-                <h2>Automated Medicine Dispenser</h2>
-
-                <div class="tags">
-                    <span>STM32</span>
-                    <span>C</span>
-                    <span>UART</span>
-                    <span>Embedded Systems</span>
-                </div>
-
-                <p>
-                    Designed and developed an automated medicine dispenser using
-                    an STM32 microcontroller, achieving 99.5% dispensing accuracy
-                    across more than 200 test cycles.
-                </p>
-
-                <p>
-                    Programmed embedded firmware in C to control motors, process
-                    sensor inputs, automate the dispensing sequence, and performed
-                    extensive hardware debugging and system testing to ensure
-                    reliable operation.
-                </p>
-
-                <div class="project-links">
-                    <a href="https://github.com/tina-yaghchian/medicine-dispenser"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        GitHub
-                    </a>
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- Project 2 -->
-        <div class="project">
-
-            <div class="project-info">
-
-                <h2>WiFi Controlled RC Car</h2>
-
-                <div class="tags">
-                    <span>ESP8266</span>
-                    <span>C++</span>
-                    <span>IoT</span>
-                </div>
-
-                <p>
-                    Completed a hands-on project during the Electrium Mobility
-                    Workshop by assembling and programming a WiFi-controlled RC
-                    car using an ESP8266 microcontroller.
-                </p>
-
-                <p>
-                    Implemented wireless communication and remote-control
-                    functionality while following structured workshop instructions
-                    to gain practical experience with embedded systems and IoT
-                    development.
-                </p>
-
-                <div class="project-links">
-                    <a href="https://github.com/tina-yaghchian/rc-car-wifi-control"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        GitHub
-                    </a>
-                </div>
-
-            </div>
-
-            <img src="images/RC_Car.jpeg"
-                 alt="RC Car">
+            <a href="https://linkedin.com/in/tina-yaghchian"
+               target="_blank"
+               rel="noopener noreferrer">
+                LinkedIn
+            </a>
 
         </div>
 
     </div>
 
-</main>
 
-</section>
+    <!-- Main Projects Content -->
 
-<script src="js/script.js"></script>
+    <main class="projects">
+
+
+        <!-- Hero -->
+
+        <div class="projects-header">
+
+            <p class="greeting fade-up delay-1">
+                PROJECTS
+            </p>
+
+            <h1 class="fade-up delay-2">
+                Featured Work
+            </h1>
+
+            <p class="projects-description fade-up delay-3">
+                A collection of engineering and software projects spanning
+                full-stack development, AI, embedded systems, firmware,
+                and data-driven applications.
+            </p>
+
+        </div>
+
+
+        <!-- Scroll Indicator -->
+
+        <a href="#projects-list" class="scroll-indicator">
+
+            <span>↓</span>
+
+            <p>Explore</p>
+
+        </a>
+
+
+        <!-- Projects -->
+
+        <div id="projects-list">
+
+
+            <!-- Project 1: Campus Study Spot Finder -->
+
+            <div class="project">
+
+                <img src="images/study-spot.png"
+                     alt="Campus Study Spot Finder">
+
+                <div class="project-info">
+
+                    <h2>
+                        Campus Study Spot Finder
+                    </h2>
+
+                    <div class="tags">
+
+                        <span>Next.js</span>
+                        <span>TypeScript</span>
+                        <span>Supabase</span>
+                        <span>PostgreSQL</span>
+                        <span>Google Maps API</span>
+
+                    </div>
+
+                    <p>
+                        Built a full-stack campus study-spot platform that
+                        helps students discover and review study spaces
+                        based on their preferences.
+                    </p>
+
+                    <p>
+                        Implemented database-backed locations,
+                        preference-based search and filtering, dynamic
+                        study-spot pages, and Google Maps integration.
+                    </p>
+
+                    <div class="project-links">
+
+                        <a href="https://github.com/tina-yaghchian/study-spot-finder"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Project 2: AI Study Assistant -->
+
+            <div class="project">
+
+                <div class="project-info">
+
+                    <h2>
+                        AI Study Assistant
+                    </h2>
+
+                    <div class="tags">
+
+                        <span>Python</span>
+                        <span>Streamlit</span>
+                        <span>Ollama</span>
+                        <span>ChromaDB</span>
+                        <span>PyPDF</span>
+
+                    </div>
+
+                    <p>
+                        Built an AI-powered study assistant that processes
+                        lecture PDFs to help students generate useful
+                        study material.
+                    </p>
+
+                    <p>
+                        Implemented PDF text extraction, study-note
+                        generation, practice quiz generation, and
+                        context-aware Q&amp;A using ChromaDB retrieval
+                        and locally hosted Ollama models.
+                    </p>
+
+                    <div class="project-links">
+
+                        <a href="https://github.com/tina-yaghchian/ai-study-assistant"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <img src="images/ai-study-assistant.png"
+                     alt="AI Study Assistant">
+
+            </div>
+
+
+            <!-- Project 3: WiFi Controlled RC Car -->
+
+            <div class="project">
+
+                <img src="images/RC_Car.jpeg"
+                     alt="WiFi Controlled RC Car">
+
+                <div class="project-info">
+
+                    <h2>
+                        WiFi Controlled RC Car
+                    </h2>
+
+                    <div class="tags">
+
+                        <span>ESP8266</span>
+                        <span>C++</span>
+                        <span>WebSocket</span>
+                        <span>IoT</span>
+
+                    </div>
+
+                    <p>
+                        Completed a hands-on project during the Electrium
+                        Mobility Workshop by assembling and programming a
+                        WiFi-controlled RC car using an ESP8266 microcontroller.
+                    </p>
+
+                    <p>
+                        Implemented wireless communication, PWM motor control,
+                        and servo mapping for responsive remote-controlled
+                        steering and navigation.
+                    </p>
+
+                    <div class="project-links">
+
+                        <a href="https://github.com/tina-yaghchian/rc-car-wifi-control"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Project 4: Automated Medicine Dispenser -->
+
+            <div class="project">
+
+                <div class="project-info">
+
+                    <h2>
+                        Automated Medicine Dispenser
+                    </h2>
+
+                    <div class="tags">
+
+                        <span>STM32</span>
+                        <span>C++</span>
+                        <span>Python</span>
+                        <span>Embedded Systems</span>
+
+                    </div>
+
+                    <p>
+                        Developed an STM32-based automated medicine dispenser
+                        achieving 99.5% dispensing accuracy across more than
+                        200 test cycles.
+                    </p>
+
+                    <p>
+                        Programmed embedded firmware to control motors,
+                        process sensor inputs, automate the dispensing
+                        sequence, and perform hardware debugging and
+                        reliability testing.
+                    </p>
+
+                    <div class="project-links">
+
+                        <a href="https://github.com/tina-yaghchian/medicine-dispenser"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <img src="images/medicine.jpeg"
+                     alt="Automated Medicine Dispenser">
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+    <script src="js/script.js"></script>
 
 </body>
 
 </html>
+```
