@@ -2,231 +2,150 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CB9YDHK9V0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-CB9YDHK9V0');
+    </script>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Tina Yaghchian | Computer Engineering</title>
+    <title>About | Tina Yaghchian</title>
+    <meta name="description" content="About Tina Yaghchian, a Computer Engineering student at the University of Waterloo, with her education and technical skills.">
+    <meta name="author" content="Tina Yaghchian">
+    <link rel="canonical" href="https://tina-yaghchian.github.io/about.html">
+    <meta name="theme-color" content="#0b0d0c" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#f3f1ea" media="(prefers-color-scheme: light)">
 
-    <link rel="stylesheet" href="css/styles.css">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="About | Tina Yaghchian">
+    <meta property="og:description" content="About Tina Yaghchian, a Computer Engineering student at the University of Waterloo, with her education and technical skills.">
+    <meta property="og:url" content="https://tina-yaghchian.github.io/about.html">
+    <meta property="og:image" content="https://tina-yaghchian.github.io/images/og.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="favicon.ico" sizes="32x32">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+    <script>
+        (function () {
+            var root = document.documentElement, saved = null;
+            root.classList.add("js");
+            try { saved = localStorage.getItem("theme"); } catch (e) {}
+            root.dataset.theme = saved || (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+        })();
+    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="css/styles.css">
+    
 </head>
 
 <body>
-<div class="background-effects">
+    <a class="skip" href="#main">Skip to content</a>
 
-    <div class="glow glow-1"></div>
-    <div class="glow glow-2"></div>
-
-    <div class="circuit circuit-top-left"></div>
-    <div class="circuit circuit-top-right"></div>
-    <div class="circuit circuit-bottom-left"></div>
-    <div class="circuit circuit-bottom-right"></div>
-
-</div>
-    <!-- Navigation -->
-
-<nav>
-
-    <button class="menu-btn" id="menuBtn">
-        ☰
-    </button>
-
-    <div class="right-nav">
-        <div class="logo">TY</div>
-
-    </div>
-
-</nav>
-    
-    <!-- Sidebar -->
-
-<div class="sidebar" id="sidebar">
-
-    <button class="close-btn" id="closeBtn">
-
-        ✕
-
-    </button>
-
-    <ul>
-
-        <li><a href="index.html">Home</a></li>
-
-        <li><a href="about.html" class="active">About</a></li>
-
-        <li><a href="projects.html">Projects</a></li>
-
-        <li><a href="experience.html">Experience</a></li>
-
-        <li><a href="contact.html">Contact</a></li>
-
-    </ul>
-
-    <div class="socials">
-
-        <a href="https://github.com/tina-yaghchian" target="_blank">
-            GitHub
-        </a>
-
-        <a href="https://linkedin.com/in/tina-yaghchian" target="_blank">
-            LinkedIn
-        </a>
-
-    </div>
-
-</div>
-
-    <!-- Hero -->
-
-<section class="about">
-
-    <div class="about-container">
-
-        <p class="greeting fade-up delay-1">
-            ABOUT ME
-        </p>
-
-        <h1 class="fade-up delay-2">
-            Hi, I'm Tina.
-        </h1>
-
-        <p class="about-text fade-up delay-3">
-
-            I'm a Computer Engineering student at the University of Waterloo with a passion for
-            embedded systems, firmware, software engineering, and artificial intelligence.
-
-            I enjoy building projects that combine hardware and software to solve real-world
-            problems (from STM32 embedded systems to full-stack applications and data visualization dashboards).
-
-            I'm always looking for opportunities to learn new technologies and create meaningful
-            engineering solutions.
-
-        </p>
-
-        <!-- Education -->
-
-        <div class="about-section fade-up delay-4">
-
-            <h2>Education</h2>
-
-            <div class="education-card">
-
-                <h3>University of Waterloo</h3>
-
-                <p class="degree">
-                    Bachelor of Computer Engineering
-                </p>
-
-                <p>
-                    Relevant interests include embedded systems,
-                    automation, data analysis, software development,
-                    digital design, and systems engineering.
-                </p>
-
+    <header class="site-header">
+        <div class="wrap header-inner">
+            <a class="brand" href="index.html" aria-label="Tina Yaghchian, home">
+                <span class="brand-mark" aria-hidden="true">TY</span>
+                <span class="brand-name">Tina Yaghchian</span>
+            </a>
+            <nav class="nav-links" id="site-nav" aria-label="Main">
+                <a href="projects.html">Projects</a>
+                <a href="experience.html">Experience</a>
+                <a href="about.html" aria-current="page">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="header-tools">
+                <button class="tool kbd-hint" type="button" data-cmdk aria-label="Open command menu"><svg class="icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="m10.5 10.5 3 3"/></svg><kbd>⌘K</kbd></button>
+                <button class="tool theme-toggle" type="button" aria-label="Switch light or dark theme"><svg class="icon sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v1.5M8 13v1.5M1.5 8H3M13 8h1.5M3.4 3.4l1 1M11.6 11.6l1 1M3.4 12.6l1-1M11.6 4.4l1-1"/></svg><svg class="icon moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.5 9.6A6 6 0 0 1 6.4 2.5a6 6 0 1 0 7.1 7.1Z"/></svg></button>
+                <button class="tool menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav"><svg class="icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 5h12M2 11h12"/></svg></button>
             </div>
+        </div>
+    </header>
 
+    <main id="main">
+        <div class="wrap page-head">
+            <p class="label">About</p>
+            <h1>Hi, I'm Tina.</h1>
         </div>
 
-
-    <!-- Technical Skills -->
-
-<div class="about-section fade-up delay-5">
-
-    <h2>Technical Skills</h2>
-
-    <div class="skills-grid">
-
-        <div class="skill-card">
-
-            <h3>Languages</h3>
-
-            <p>
-                Python<br>
-                C++<br>
-                HTML/CSS<br>
-                Verilog<br>
-                SQL
-            </p>
-
+        <div class="wrap about-grid">
+            <div class="prose">
+                <p>I'm a Computer Engineering student at the University of Waterloo with a passion for embedded systems, firmware, software engineering, and artificial intelligence.</p>
+                <p>I enjoy building projects that combine hardware and software to solve real-world problems, from STM32 embedded systems to full-stack applications and data visualization dashboards.</p>
+                <p>I'm always looking for opportunities to learn new technologies and create meaningful engineering solutions.</p>
+            </div>
+            <aside class="panel">
+                <img class="crest" src="images/web/Waterloo.webp" width="168" height="168" alt="University of Waterloo crest" loading="lazy">
+                <h2>University of Waterloo</h2>
+                <p class="degree">Bachelor of Computer Engineering</p>
+                <p>Relevant interests include embedded systems, automation, data analysis, software development, digital design, and systems engineering.</p>
+            </aside>
         </div>
 
-        <div class="skill-card">
+        <section class="section" style="border-top:1px solid var(--line)">
+            <div class="wrap">
+                <div class="section-head">
+                    <div>
+                        <h2>Technical skills</h2>
+                    </div>
+                </div>
+                <div class="spec-table">
+                    <div class="spec-row">
+                        <h3>Languages</h3>
+                        <ul class="tags"><li>Python</li><li>C++</li><li>HTML/CSS</li><li>Verilog</li><li>SQL</li></ul>
+                    </div>
+                    <div class="spec-row">
+                        <h3>Embedded systems</h3>
+                        <ul class="tags"><li>STM32</li><li>Arduino</li><li>ESP8266</li></ul>
+                    </div>
+                    <div class="spec-row">
+                        <h3>Data &amp; analytics</h3>
+                        <ul class="tags"><li>NumPy</li><li>Pandas</li><li>Tableau</li><li>Business Intelligence</li><li>Data Visualization</li></ul>
+                    </div>
+                    <div class="spec-row">
+                        <h3>Testing</h3>
+                        <ul class="tags"><li>Unit Testing</li><li>Hardware-in-the-Loop Testing</li><li>Test Case Design</li><li>Debugging</li></ul>
+                    </div>
+                    <div class="spec-row">
+                        <h3>Development tools</h3>
+                        <ul class="tags"><li>Git &amp; GitHub</li><li>VS Code</li><li>Linux Command Line</li><li>Arduino IDE</li></ul>
+                    </div>
+                    <div class="spec-row">
+                        <h3>Hardware &amp; design</h3>
+                        <ul class="tags"><li>AutoCAD</li><li>SolidWorks</li><li>3D Printing</li></ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-            <h3>Data & Analytics</h3>
-
-            <p>
-                NumPy<br>
-                Pandas<br>
-                Tableau<br>
-                Business Intelligence<br>
-                Data Visualization
-            </p>
-
+    <footer class="site-footer">
+        <div class="wrap footer-inner">
+            <span>&copy; <span data-year>2026</span> Tina Yaghchian</span>
+            <div class="footer-links">
+                <a href="mailto:tyaghchi@uwaterloo.ca">Email</a>
+                <a href="https://github.com/tina-yaghchian" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com/in/tina-yaghchian" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="privacy.html">Privacy</a>
+            </div>
         </div>
+    </footer>
 
-        <div class="skill-card">
+    <dialog class="cmdk" id="cmdk" aria-label="Command menu">
+        <input class="cmdk-input" type="text" placeholder="Search pages, projects, actions" aria-label="Search" autocomplete="off" spellcheck="false">
+        <div class="cmdk-list"></div>
+    </dialog>
 
-            <h3>Development Tools</h3>
-
-            <p>
-                Git & GitHub<br>
-                VS Code<br>
-                Linux Command Line<br>
-                Arduino IDE
-            </p>
-
-        </div>
-
-        <div class="skill-card">
-
-            <h3>Testing</h3>
-
-            <p>
-                Unit Testing<br>
-                Hardware-in-the-Loop Testing<br>
-                Test Case Design<br>
-                Debugging
-            </p>
-
-        </div>
-
-        <div class="skill-card">
-
-            <h3>Embedded Systems</h3>
-
-            <p>
-                STM32<br>
-                Arduino<br>
-                ESP8266
-            </p>
-
-        </div>
-
-        <div class="skill-card">
-
-            <h3>Hardware & Design</h3>
-
-            <p>
-                AutoCAD<br>
-                SolidWorks<br>
-                3D Printing
-            </p>
-
-        </div>
-
-    </div>
-
-</div>
-
-</section>
-
-<script src="js/script.js"></script>
-
+    <script src="js/main.js"></script>
 </body>
 
 </html>

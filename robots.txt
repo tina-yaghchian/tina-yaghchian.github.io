@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tina-yaghchian.github.io/sitemap.xml

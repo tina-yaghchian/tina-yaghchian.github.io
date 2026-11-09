@@ -1,201 +1,62 @@
 # Tina Yaghchian Portfolio
 
-A modern, responsive portfolio website showcasing my software engineering, embedded systems, and technical projects as a Computer Engineering student at the University of Waterloo.
+The personal portfolio of Tina Yaghchian, a Computer Engineering student at the University of Waterloo, showcasing software engineering, embedded systems, and technical projects.
 
-**Live Website:**  
-🌐 https://tina-yaghchian.github.io
+**Live website:** https://tina-yaghchian.github.io
 
----
+## Features
 
-## Overview
-
-This repository contains the source code for my personal portfolio website. The website was designed and developed from scratch to present my academic projects, professional experience, leadership roles, and technical skills through a clean, interactive user interface.
-
-Rather than using a website builder or template, every page was custom designed and implemented to reflect my engineering background while demonstrating front-end development skills.
-
----
-
-## Website Features
-
-- Responsive multi-page portfolio
-- Modern glassmorphism-inspired UI
-- Animated page transitions and scroll effects
-- Interactive navigation sidebar
-- Custom engineering-themed background graphics
-- Project showcase with technology tags
-- Experience timeline with category filtering
-- Contact page with social links
-- Mobile-friendly layout
-- GitHub Pages deployment
-
----
+- Real-time 3D circuit board in the hero, modelled in three.js, with a flat canvas fallback where WebGL is unavailable
+- Skills by project: select hardware, firmware, software, or data and AI to see which work used it
+- Project and experience filtering
+- Command menu (`⌘K` / `Ctrl+K`) for pages, projects, and quick actions
+- Light and dark themes that follow the system setting and remember your choice
+- Responsive layouts from phone to wide desktop
+- Respects reduced-motion preferences; content stays readable without JavaScript
+- Cross-page transitions, optimized WebP images, SEO metadata, sitemap, and a custom 404 page
 
 ## Pages
 
-### Home
+| Page | Contents |
+| --- | --- |
+| Home | Introduction, skills by project, projects, recent experience |
+| Projects | Medicine dispenser, study spot finder, AI study assistant, RC car |
+| Experience | Professional, leadership, and campus roles |
+| About | Background, education, technical skills |
+| Contact | Email, LinkedIn, GitHub |
+| Privacy | Privacy policy |
 
-Introduces who I am, my background, and areas of interest including:
+## Built with
 
-- Software Engineering
-- Embedded Systems
-- Firmware Development
-- Data Visualization
-- Artificial Intelligence
+HTML, CSS, and vanilla JavaScript with no build step, deployed on GitHub Pages. The one library is [three.js](https://threejs.org) (MIT), self-hosted in `vendor/` and loaded only on the home page. Type is set in Archivo and IBM Plex Mono.
 
----
-
-### About
-
-Highlights my background as a Computer Engineering student at the University of Waterloo, including my technical interests, engineering mindset, and extracurricular involvement.
-
----
-
-### Projects
-
-Showcases engineering projects including:
-
-- **Automated Medicine Dispenser**
-  - STM32
-  - Embedded C
-  - UART
-  - Hardware debugging
-  - Sensor integration
-
-- **Wi-Fi Controlled RC Car**
-  - ESP8266
-  - IoT
-  - Wireless communication
-  - Embedded programming
-
-Additional projects continue to be added as they are completed.
-
----
-
-### Experience
-
-Professional and leadership experience including:
-
-- **Software Engineering Intern — Jumbula**
-- **Media Manager — Nikvan Consulting**
-- **Discord Director — Women in Engineering Society**
-- **Vice President — Iranian Students' Association of Waterloo**
-- Engineering design teams and hackathons
-
----
-
-### Contact
-
-Provides quick access to:
-
-- GitHub
-- LinkedIn
-- Email
-
----
-
-## Technologies Used
-
-### Frontend
-
-- HTML5
-- CSS3
-- JavaScript
-
-### Design
-
-- Responsive layouts
-- CSS Flexbox
-- CSS Grid
-- Custom animations
-- Glassmorphism effects
-- Gradient lighting
-- Custom SVG engineering backgrounds
-
-### Deployment
-
-- Git
-- GitHub
-- GitHub Pages
-
----
-
-## Design Philosophy
-
-The website was designed to combine a modern software engineering aesthetic with clean usability.
-
-Key design goals included:
-
-- Minimal and professional appearance
-- Smooth animations without sacrificing performance
-- Consistent visual identity across every page
-- Engineering-inspired graphics and color palette
-- Easy navigation for recruiters and employers
-- Fully responsive design for desktop and mobile devices
-
----
-
-## Repository Structure
+## Repository structure
 
 ```
 .
-├── index.html
-├── about.html
-├── projects.html
-├── experience.html
-├── contact.html
-├── css/
-│   └── styles.css
-├── js/
-├── images/
-└── assets/
+├── index.html, projects.html, experience.html, about.html, contact.html, privacy.html, 404.html
+├── css/styles.css      Design tokens and all styles
+├── js/main.js          Skills explorer, filters, theme, command menu, flat hero fallback
+├── js/board3d.js       3D circuit board hero
+├── vendor/             three.js r170 and its license
+├── images/             Source images
+├── images/web/         Optimized WebP images used by the site
+├── assets/             Favicon SVG and Apple touch icon
+├── favicon.ico
+├── .nojekyll           Serves files as is on GitHub Pages
+├── robots.txt
+└── sitemap.xml
 ```
 
----
-
-## Running Locally
-
-Clone the repository:
+## Running locally
 
 ```bash
 git clone https://github.com/tina-yaghchian/tina-yaghchian.github.io.git
-```
-
-Open the project directory:
-
-```bash
 cd tina-yaghchian.github.io
+python3 -m http.server 4173
 ```
 
-Open `index.html` in your browser or use a local development server.
-
----
-
-## Future Improvements
-
-Planned enhancements include:
-
-- Additional engineering projects
-- Project filtering and search
-- Interactive project case studies
-- Blog section
-- Dark/light theme toggle
-- Improved accessibility
-- Performance optimizations
-
----
-
-## Author
-
-**Tina Yaghchian**
-
-Computer Engineering Student  
-University of Waterloo
-
-- Portfolio: https://tina-yaghchian.github.io
-- GitHub: https://github.com/tina-yaghchian
-- LinkedIn: https://www.linkedin.com/in/tina-yaghchian/
-
----
+Then open http://localhost:4173.
 
 ## License
 
