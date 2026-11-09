@@ -168,7 +168,7 @@
         if (!hasWebGL) {
             startFlat(canvas);
         } else {
-            import("./board3d.js")
+            import("./board3d.js?v=bdb736f708")
                 .then(m => m.initBoard3D(canvas, canvas.parentElement, { reducedMotion }))
                 .catch(() => {
                     const fresh = canvas.cloneNode(false);
