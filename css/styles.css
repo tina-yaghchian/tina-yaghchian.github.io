@@ -326,7 +326,7 @@ p { text-wrap: pretty; }
 
 .spec-strip {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     border-top: 1px solid var(--line);
     background: color-mix(in srgb, var(--bg) 78%, transparent);
     backdrop-filter: blur(6px);
