@@ -9,7 +9,6 @@ The personal portfolio of Tina Yaghchian, a Computer Engineering student at the 
 - Real-time 3D circuit board in the hero, modelled in three.js, with a flat canvas fallback where WebGL is unavailable
 - Skills by project: select hardware, firmware, software, or data and AI to see which work used it
 - Project and experience filtering
-- Command menu (`⌘K` / `Ctrl+K`) for pages, projects, and quick actions
 - Light and dark themes that follow the system setting and remember your choice
 - Responsive layouts from phone to wide desktop
 - Respects reduced-motion preferences; content stays readable without JavaScript
@@ -36,7 +35,7 @@ HTML, CSS, and vanilla JavaScript with no build step, deployed on GitHub Pages. 
 .
 ├── index.html, projects.html, experience.html, about.html, contact.html, privacy.html, 404.html
 ├── css/styles.css      Design tokens and all styles
-├── js/main.js          Skills explorer, filters, theme, command menu, flat hero fallback
+├── js/main.js          Skills explorer, filters, theme, flat hero fallback
 ├── js/board3d.js       3D circuit board hero
 ├── vendor/             three.js r170 and its license
 ├── images/             Source images

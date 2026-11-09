@@ -168,7 +168,7 @@
         if (!hasWebGL) {
             startFlat(canvas);
         } else {
-            import("./board3d.js?v=bdb736f708")
+            import("./board3d.js?v=885004c96f")
                 .then(m => m.initBoard3D(canvas, canvas.parentElement, { reducedMotion }))
                 .catch(() => {
                     const fresh = canvas.cloneNode(false);
@@ -445,111 +445,6 @@
 
         resize();
         document.fonts?.ready.then(() => { paintLayers(); if (!running) frame(0); });
-    }
-
-    /* Command palette (⌘K) ---------------------------------------------------- */
-
-    const dialog = $("#cmdk");
-    if (dialog) {
-        const input = $(".cmdk-input", dialog);
-        const list = $(".cmdk-list", dialog);
-        const go = url => () => { location.href = url; };
-        const open = url => () => { window.open(url, "_blank", "noopener"); };
-
-        const commands = [
-            ["Home", "Page", go("index.html")],
-            ["Projects", "Page", go("projects.html")],
-            ["Experience", "Page", go("experience.html")],
-            ["About", "Page", go("about.html")],
-            ["Contact", "Page", go("contact.html")],
-            ["Privacy Policy", "Page", go("privacy.html")],
-            ["Automated Medicine Dispenser", "Project", go("projects.html#medicine-dispenser")],
-            ["Campus Study Spot Finder", "Project", go("projects.html#study-spot")],
-            ["AI Study Assistant", "Project", go("projects.html#ai-study-assistant")],
-            ["WiFi Controlled RC Car", "Project", go("projects.html#rc-car")],
-            ["Copy email address", "Action", () => { copyEmail(); }],
-            ["Switch light / dark theme", "Action", toggleTheme],
-            ["Open GitHub", "Link", open("https://github.com/tina-yaghchian")],
-            ["Open LinkedIn", "Link", open("https://linkedin.com/in/tina-yaghchian")]
-        ];
-
-        let results = commands;
-        let selected = 0;
-
-        function render() {
-            list.replaceChildren();
-            if (!results.length) {
-                const empty = document.createElement("p");
-                empty.className = "cmdk-empty";
-                empty.textContent = "No matches";
-                list.appendChild(empty);
-                return;
-            }
-            results.forEach((cmd, i) => {
-                const b = document.createElement("button");
-                b.type = "button";
-                b.className = i === selected ? "sel" : "";
-                const name = document.createElement("span");
-                name.textContent = cmd[0];
-                const kind = document.createElement("span");
-                kind.className = "mono";
-                kind.textContent = cmd[1];
-                b.append(name, kind);
-                b.addEventListener("click", () => run(cmd));
-                list.appendChild(b);
-            });
-        }
-
-        function mark() {
-            $$("button", list).forEach((b, i) => {
-                b.classList.toggle("sel", i === selected);
-                if (i === selected) b.scrollIntoView({ block: "nearest" });
-            });
-        }
-
-        function run(cmd) {
-            dialog.close();
-            cmd[2]();
-        }
-
-        function show() {
-            input.value = "";
-            results = commands;
-            selected = 0;
-            render();
-            dialog.showModal();
-            input.focus();
-        }
-
-        input.addEventListener("input", () => {
-            const q = input.value.trim().toLowerCase();
-            results = commands.filter(c => (c[0] + " " + c[1]).toLowerCase().includes(q));
-            selected = 0;
-            render();
-        });
-
-        input.addEventListener("keydown", e => {
-            if (e.key === "ArrowDown" || e.key === "ArrowUp") {
-                e.preventDefault();
-                if (!results.length) return;
-                const delta = e.key === "ArrowDown" ? 1 : -1;
-                selected = (selected + delta + results.length) % results.length;
-                mark();
-            } else if (e.key === "Enter" && results[selected]) {
-                e.preventDefault();
-                run(results[selected]);
-            }
-        });
-
-        dialog.addEventListener("click", e => { if (e.target === dialog) dialog.close(); });
-        $$("[data-cmdk]").forEach(b => b.addEventListener("click", show));
-
-        document.addEventListener("keydown", e => {
-            if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
-                e.preventDefault();
-                if (dialog.open) dialog.close(); else show();
-            }
-        });
     }
 
     /* Footer year ------------------------------------------------------------- */

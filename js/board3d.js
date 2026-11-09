@@ -345,7 +345,6 @@ function buildMarkings(group) {
         text("J1", -4.3, 2.58, 0.16);
         text("TINA", -3.35, 3.28, 0.2);
         text("YAGHCHIAN", -3.35, 3.55, 0.13);
-        text("REV 2026", -3.35, 3.82, 0.11, 400);
 
         text("U2", 2.72, -4.55, 0.16);
         box(2.65, -4.42, 1.6, 1.44);

@@ -220,7 +220,6 @@ p { text-wrap: pretty; }
     transition: color .2s, border-color .2s;
 }
 .tool:hover { color: var(--ink); border-color: var(--line-strong); }
-.tool kbd { font-family: var(--mono); font-size: 11.5px; }
 
 .theme-toggle .sun { display: none; }
 :root[data-theme="light"] .theme-toggle .sun { display: block; }
@@ -327,7 +326,7 @@ p { text-wrap: pretty; }
 
 .spec-strip {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     border-top: 1px solid var(--line);
     background: color-mix(in srgb, var(--bg) 78%, transparent);
     backdrop-filter: blur(6px);
@@ -337,7 +336,6 @@ p { text-wrap: pretty; }
 .spec-strip > div { padding: 20px var(--gutter) 22px 0; }
 .spec-strip > div + div { padding-left: 28px; border-left: 1px solid var(--line); }
 .spec-strip strong { display: block; margin-top: 6px; font-size: 16.5px; font-weight: 500; line-height: 1.35; }
-.spec-strip .accent { color: var(--accent); }
 
 /* Sections ----------------------------------------------------------------- */
 
@@ -455,20 +453,6 @@ p { text-wrap: pretty; }
     transition: transform .9s var(--ease);
 }
 .frame.shot { aspect-ratio: 16 / 9; }
-
-.metric-badge {
-    position: absolute;
-    left: 14px;
-    bottom: 14px;
-    padding: 8px 12px;
-    background: var(--bg);
-    border: 1px solid var(--line-strong);
-    border-radius: 7px;
-    font-family: var(--mono);
-    font-size: 12.5px;
-    line-height: 1.4;
-}
-.metric-badge b { color: var(--accent); font-weight: 500; }
 
 .card-meta { display: flex; justify-content: space-between; gap: 20px; margin-top: 18px; }
 .card h3 { font-size: clamp(23px, 2.2vw, 30px); transition: color .2s; }
@@ -588,28 +572,6 @@ p { text-wrap: pretty; }
 .case p.summary { color: var(--ink); font-size: 18.5px; line-height: 1.5; }
 .case .tags { margin-top: 24px; }
 .case .text-link { margin-top: 26px; }
-
-.readout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-self: stretch;
-    margin-top: 26px;
-    border: 1px solid var(--line);
-    border-radius: 10px;
-    background: var(--surface);
-}
-.readout > div { padding: 16px 18px; }
-.readout > div + div { border-left: 1px solid var(--line); }
-.readout b {
-    display: block;
-    font-family: var(--mono);
-    font-size: clamp(26px, 2.6vw, 34px);
-    font-weight: 400;
-    line-height: 1.15;
-    letter-spacing: -.03em;
-    color: var(--accent);
-}
-.readout span { display: block; margin-top: 5px; font-size: 13.5px; line-height: 1.35; color: var(--muted); }
 
 figure { margin: 0; }
 figcaption { margin-top: 12px; color: var(--faint); }
@@ -766,54 +728,6 @@ figcaption { margin-top: 12px; color: var(--faint); }
 .footer-links a { transition: color .2s; }
 .footer-links a:hover { color: var(--accent); }
 
-/* Command palette ------------------------------------------------------------ */
-
-.cmdk {
-    width: min(600px, calc(100vw - 32px));
-    max-height: min(480px, 76dvh);
-    margin: 12vh auto auto;
-    padding: 0;
-    color: var(--ink);
-    background: var(--surface);
-    border: 1px solid var(--line-strong);
-    border-radius: 12px;
-    box-shadow: var(--shadow);
-    overflow: hidden;
-}
-.cmdk[open] { display: flex; flex-direction: column; animation: pop .18s var(--ease); }
-.cmdk::backdrop { background: rgba(5, 7, 6, .55); backdrop-filter: blur(3px); }
-@keyframes pop { from { opacity: 0; transform: translateY(-8px) scale(.985); } }
-
-.cmdk-input {
-    flex: none;
-    width: 100%;
-    height: 54px;
-    padding-inline: 18px;
-    font: inherit;
-    color: inherit;
-    background: none;
-    border: 0;
-    border-bottom: 1px solid var(--line);
-    outline: 0;
-}
-.cmdk-input::placeholder { color: var(--faint); }
-.cmdk-list { overflow-y: auto; padding: 6px; }
-.cmdk-list button {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 16px;
-    padding: 10px 12px;
-    text-align: left;
-    font-size: 15.5px;
-    border-radius: 7px;
-}
-.cmdk-list button .mono { color: var(--faint); }
-.cmdk-list button.sel, .cmdk-list button:hover { background: var(--surface-2); }
-.cmdk-list button.sel .mono { color: var(--accent); }
-.cmdk-empty { padding: 22px 12px; color: var(--muted); text-align: center; }
-
 /* Responsive ---------------------------------------------------------------- */
 
 @media (max-width: 1040px) {
@@ -825,7 +739,6 @@ figcaption { margin-top: 12px; color: var(--faint); }
 @media (max-width: 900px) {
     :root { --header: 60px; }
 
-    .kbd-hint { display: none; }
     .menu-toggle { display: inline-flex; }
 
     .nav-links {
@@ -918,5 +831,5 @@ figcaption { margin-top: 12px; color: var(--faint); }
 }
 
 @media print {
-    .site-header, #board, .filter-bar, .site-footer, .cmdk { display: none !important; }
+    .site-header, #board, .filter-bar, .site-footer { display: none !important; }
 }
